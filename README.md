@@ -1,11 +1,11 @@
 # Multipath-QUIC-ACN-project
 Developed a file transfer system which uses Multipath-Quic protocol to transfer large files. Demonstrated MP-QUIC’s benefits over simple QUIC and MPTCP protocol. Used mininet (network emulator) to emulate multipath network.
-Group Number - 10
+**Group Number - 10**
 
-Saptarsi Saha           Manisha Jhunjhunwala          Shailesh Navale         Madhur Navandar
-2020H1030109         2020H1030125                      2020H1030169          2020H1030163
+*[Saptarsi Saha](https://github.com/saptarsi96)*               *[Manisha Jhunjhunwala](https://github.com/ManishaJhunjhunwala)*               *[Shailesh Navale](https://github.com/Shailesh122)*              *[Madhur Navandar](https://github.com/mnavandar)*  
+*2020H1030109*            *2020H1030125*                         *2020H1030169*             *2020H1030163*
 
-Abstract
+**Abstract**
 
 In the current scenario, QUIC(Quick UDP Internet Connection), developed by Google is being used extensively in Chrome to reduce page-load times, rebuffers and to have a low latency of client-server communication. It has replaced the traditional HTTPS/TLS/TCP stack and has included some cryptographic mechanisms to authenticate the server along with leveraging the reliability and congestion control mechanisms of modern TCP stacks. But it cannot expolit the multiple paths and several wireless interfaces existing between today's mobile devices. Here comes the multipath version of QUIC - MPQUIC which can take advantage of multiple paths existing between the two communicating hosts simultaneously resulting in increased utilisation of resources and efficiency. Although this protocol has not been implemented in the real-world setups, we have tried to simulate the working of MPQUIC over a mininet VM and have conducted some file transfer experiments using MPQUIC(built over UDP). Also, in the internet, web pages can be rendered as the multiple streams for e.g a web page might render the streams collecting the HTML text, video, audio, advertisement,etc. The implementation of the MPQUIC as presented in the Conext`17 research paper is not stream aware. So, we have studied the Priority Bucket scheduler(PStream) and have presented our ideas to improvise on the time complexity of the scheduling algorithm from O($n^2$) to O($nlogn$).
 
